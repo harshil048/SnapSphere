@@ -62,6 +62,7 @@ export async function signInAccount(user: {
     console.log(error);
   }
 }
+
 export async function getCurrentUser(){
   try {
     const currentAccount = await account.get();
@@ -79,5 +80,14 @@ export async function getCurrentUser(){
   } catch (error) {
     console.log(error);
     return null;
+  }
+}
+
+export async function signOutAccount(){
+  try {
+    const session = await account.deleteSession('current');
+    return session;
+  } catch (error) {
+    console.log(error);
   }
 }
