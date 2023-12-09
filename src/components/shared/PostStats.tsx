@@ -33,9 +33,9 @@ const PostStats = ({ post, userId }: postStatsProps) => {
 
   useEffect(() => {
     setIsSaved(!!savedPostRecord);
-  }, [currentUser, isSaved]);
+  }, [currentUser]);
 
-  const handleLikePost = (e: React.MouseEvent) => {
+  const handleLikePost = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
     e.stopPropagation();
     let newLikes = [...likes];
     if (newLikes.includes(userId)) {
@@ -47,14 +47,14 @@ const PostStats = ({ post, userId }: postStatsProps) => {
     likePost({ postId: post?.$id || '', likesArray: newLikes });
   };
 
-  const handleSavePost = (e: React.MouseEvent) => {
+  const handleSavePost = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
     e.stopPropagation();
 
     if (savedPostRecord) {
       setIsSaved(false);
-      deleteSavedPost(savedPostRecord.$id);
+      return deleteSavedPost(savedPostRecord.$id);
     } else {
-      SavePost({ postId: post?.$id || '', userId });
+      SavePost({ postId: post?.$id || '', userId: userId });
       setIsSaved(true);
     }
   };
@@ -86,7 +86,7 @@ const PostStats = ({ post, userId }: postStatsProps) => {
             }`}
             width={20}
             height={20}
-            onClick={handleSavePost}
+            onClick={(e) => handleSavePost(e)}
             className="cursor-pointer"
           ></img>
         )}
