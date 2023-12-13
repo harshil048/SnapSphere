@@ -1,4 +1,40 @@
+# SnapSphere Social Media Platform
 
+Welcome to SnapSphere, a social media website designed to share moments.
+
+## Features
+
+### 1. Sign Up and Sign In
+- Users can create accounts by signing up with the necessary details.
+- Secure login functionality for registered users.
+
+### 2. Create Post
+- Users have the ability to create posts with:
+  - Caption: A text description accompanying the post.
+  - Image: Visual content attached to the post.
+  - Location: Information about where the post was created.
+  - Tags: Categorize and discover posts easily.
+
+### 3. Explore Post
+- Search for specific posts using captions.
+- Efficient content discovery within the platform.
+
+### 4. Discover Hub
+- Displays a list of all users on the platform.
+- Users can view profiles.
+
+### 5. Saved Posts
+- Users can save posts for later viewing.
+- Centralized location for accessing saved content.
+
+### 6. User Profile
+- View and manage user profiles.
+- Includes uploaded posts and likes received.
+- Edit profile information such as profile icon, name, and bio.
+
+### 7. Like and Save Functionality
+- Users can interact with posts by liking them.
+- Dedicated section for easy access to saved content.
 # Preview
 
 https://github.com/harshil048/SnapSphere/assets/74892092/44bd17f4-2425-43ca-8f23-30eb84502834
