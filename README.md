@@ -36,7 +36,7 @@ Welcome to SnapSphere, a social media website designed to share moments.
 - Users can interact with posts by liking them.
 - Dedicated section for easy access to saved content.
 
-### 8. Infinite Scrolling Feature:
+### 8. Infinite Scrolling Feature
 - SnapSphere incorporates an infinite scrolling mechanism, allowing users to seamlessly browse through an extensive feed of posts without the need for pagination.
 # Preview
 
