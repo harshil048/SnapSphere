@@ -1,3 +1,9 @@
+
+# Preview
+
+https://github.com/harshil048/SnapSphere/assets/74892092/44bd17f4-2425-43ca-8f23-30eb84502834
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
