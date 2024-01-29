@@ -1,6 +1,7 @@
 # SnapSphere Social Media Platform
 
 Welcome to SnapSphere, a social media website designed to share moments.
+[Preview](https://snap-sphere.vercel.app/sign-in)
 
 ## Features
 
