@@ -1,5 +1,4 @@
 import { Models } from 'appwrite';
-import React from 'react'
 import GridPostList from './GridPostList';
 import { Loader } from 'lucide-react';
 type searchResultProps = {
@@ -10,11 +9,11 @@ const SearchResults = ({isSearchFetching, searchedPosts} : searchResultProps) =>
 
   if(isSearchFetching) <Loader />
 
-  if(searchedPosts && searchedPosts.documents.length > 0){
+  if (searchedPosts && (searchedPosts as any).documents && (searchedPosts as any).documents.length > 0) {
     return (
-      <GridPostList posts={searchedPosts.documents} />
-    )
-  } 
+      <GridPostList posts={(searchedPosts as any).documents} />
+    );
+  }  
 
   return (
     <p className='text-light-4 mt-10 text-center w-full'>No Result Found</p>
